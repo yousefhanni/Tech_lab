@@ -1,0 +1,54 @@
+<odoo>
+    <record id="view_demo_inventory_tree" model="ir.ui.view">
+        <field name="name">demo.inventory.tree</field>
+        <field name="model">demo.inventory</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="price"/>
+               <field name="quantity"/>
+                 <field name="total_price"/>
+            </list>
+        </field>
+    </record>
+
+   <record id="view_demo_inventory_form" model="ir.ui.view">
+        <field name="name">demo.inventory.form</field>
+        <field name="model">demo.inventory</field>
+        <field name="arch" type="xml">
+            <form>
+
+                <header >
+                    <button string="Product upgrade"
+                            type="object"
+                            name="action_upgrade"
+                                class="btn-primary"/>
+                </header>
+
+                <sheet>
+                    <group>
+                         <field name="name"/>
+                         <field name="price"/>
+                         <field name="quantity"/>
+                         <field name="total_price"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_demo_inventory" model="ir.actions.act_window">
+
+      <field name="name">Demo inventory</field>
+
+       <field name="res_model">demo.inventory</field>
+
+       <field name="view_mode">list,form</field>
+
+    </record>
+
+    <menuitem id="menu_simple_inventory_root" name="Demo Inventory"/>
+
+   <menuitem id="menu_simple_inventory_main" name="Inventory" parent="menu_simple_inventory_root" action="action_demo_inventory"/>
+
+</odoo>
