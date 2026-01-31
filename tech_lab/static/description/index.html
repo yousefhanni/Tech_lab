@@ -1,0 +1,709 @@
+<!--<section class="oe_container oe_dark">-->
+<!--    <div class="col-md-12">-->
+<!--        <h2 class="oe_slogan" style="font-size: 35px; color:#714B67;"><b>User Action Visibility Control</b></h2>-->
+<!--        <h3 class="oe_slogan" style="opacity: 0.7;">Take full control over Action Menu visibility per User and per Model</h3>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section class="oe_container">-->
+<!--    <div class="col-md-12">-->
+<!--        <p class="oe_slogan" style="font-size: 18px; color:#333333; line-height: 1.6;">-->
+<!--            Are you looking to restrict specific UI actions like <b>Duplicate, Delete, or Export</b> for certain users without messing with complex security rules?-->
+<!--            This module provides a clean, dynamic way to hide action menu items based on the user's role and the specific Odoo model they are viewing.-->
+<!--        </p>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section class="oe_container">-->
+<!--    <div class="oe_row oe_spaced">-->
+<!--        <div class="col-md-12">-->
+<!--            <h3 class="oe_slogan" style="color:#714B67; text-align: left; margin-left: 20px;"><b>Main Features:</b></h3>-->
+<!--            <div style="margin-left: 40px;">-->
+<!--                <p class="fa fa-check-circle" style="color:#2dd280; font-size: 20px;">-->
+<!--                    <span style="color:#333; font-size: 16px; margin-left: 10px;">Hide common actions: <b>Duplicate, Archive, Unarchive, Delete, Export</b>.</span>-->
+<!--                </p><br/>-->
+<!--                <p class="fa fa-check-circle" style="color:#2dd280; font-size: 20px;">-->
+<!--                    <span style="color:#333; font-size: 16px; margin-left: 10px;">Granular control: Configure different rules for <b>different models</b> for the same user.</span>-->
+<!--                </p><br/>-->
+<!--                <p class="fa fa-check-circle" style="color:#2dd280; font-size: 20px;">-->
+<!--                    <span style="color:#333; font-size: 16px; margin-left: 10px;"><b>User-specific:</b> Settings are applied at the user level through a dedicated tab.</span>-->
+<!--                </p><br/>-->
+<!--                <p class="fa fa-check-circle" style="color:#2dd280; font-size: 20px;">-->
+<!--                    <span style="color:#333; font-size: 16px; margin-left: 10px;">Native Feel: Built using <b>OWL (Odoo Web Library)</b> for Odoo 18 backend.</span>-->
+<!--                </p><br/>-->
+<!--                <p class="fa fa-check-circle" style="color:#2dd280; font-size: 20px;">-->
+<!--                    <span style="color:#333; font-size: 16px; margin-left: 10px;">Safe: Does not affect backend business logic or access rights (CRUD).</span>-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section class="oe_container oe_dark">-->
+<!--    <div class="oe_row oe_spaced">-->
+<!--        <div class="col-md-12">-->
+<!--            <h3 class="oe_slogan" style="color:#714B67;"><b>How to Configure</b></h3>-->
+<!--            <p class="oe_slogan" style="font-size: 16px;">Easy setup in just 3 steps:</p>-->
+<!--        </div>-->
+<!--        <div class="col-md-4 text-center">-->
+<!--            <span class="fa fa-user" style="font-size: 45px; color:#714B67;"></span>-->
+<!--            <p>1. Go to <b>Settings > Users</b> and select a user.</p>-->
+<!--        </div>-->
+<!--        <div class="col-md-4 text-center">-->
+<!--            <span class="fa fa-list-alt" style="font-size: 45px; color:#714B67;"></span>-->
+<!--            <p>2. Open <b>'Hidden Actions'</b> tab.</p>-->
+<!--        </div>-->
+<!--        <div class="col-md-4 text-center">-->
+<!--            <span class="fa fa-cogs" style="font-size: 45px; color:#714B67;"></span>-->
+<!--            <p>3. Add a rule, select <b>Models</b> and <b>Actions</b> to hide.</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section class="oe_container">-->
+<!--    <div class="oe_row oe_spaced">-->
+<!--        <div class="oe_span12">-->
+<!--            <h3 class="oe_slogan" style="color:#332c3c; font-size: 28px;">Seamless Integration in Odoo 18</h3>-->
+<!--            <p class="text-center">The module patches the backend Action Menu to filter items dynamically based on the configuration.</p>-->
+<!--            <div class="oe_demo oe_picture oe_screenshot">-->
+<!--                <img src="screenshot_config.png" alt="Configuration Tab Screenshot" style="border: 1px solid #ddd; border-radius: 10px; width: 100%;">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<hr style="width: 100%; height: 2px; background: #714B67; margin: 20px 0px;">-->
+<!--<section class="oe_container">-->
+<!--    <div class="oe_row">-->
+<!--        <div class="oe_slogan text-center">-->
+<!--            <h3 style="color:#714B67; font-size: 25px;">Need Support or Customization?</h3>-->
+<!--            <p style="font-size: 18px;">Created by: <b>Ahmed_A & Yousef_H</b></p>-->
+<!--            <div style="margin-top: 20px;">-->
+<!--                <a href="mailto:your-email@example.com" class="btn btn-primary" style="background-color: #714B67; border-color: #714B67; padding: 10px 25px; font-weight: bold;">-->
+<!--                    <i class="fa fa-envelope"></i> Contact Us via Email-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="oe_slogan" style="margin-top: 30px;">-->
+<!--                <a target="_blank" href="https://github.com/your-profile" target="new">-->
+<!--                    <i class="fa fa-github" style="font-size:38px; color: #333; margin: 0 10px;"></i>-->
+<!--                </a>-->
+<!--                <a target="_blank" href="https://linkedin.com/in/your-profile" target="new">-->
+<!--                    <i class="fa fa-linkedin-square" style="font-size:38px; color: #0077b5; margin: 0 10px;"></i>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section class="oe_container oe_dark">-->
+<!--    <div class="col-md-12">-->
+<!--        <h2 class="oe_slogan" style="font-size: 35px; color:#714B67;"><b>User Action Visibility Control</b></h2>-->
+<!--        <h3 class="oe_slogan" style="opacity: 0.7;">Take full control over Action Menu visibility per User and per Model</h3>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section class="oe_container">-->
+<!--    <div class="col-md-12">-->
+<!--        <p class="oe_slogan" style="font-size: 18px; color:#333333; line-height: 1.6;">-->
+<!--            Are you looking to restrict specific UI actions like <b>Duplicate, Delete, or Export</b> for certain users without messing with complex security rules?-->
+<!--            This module provides a clean, dynamic way to hide action menu items based on the configuration of each user.-->
+<!--        </p>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section class="oe_container">-->
+<!--    <div class="oe_row oe_spaced">-->
+<!--        <h3 class="oe_slogan" style="color:#714B67;"><b>See it in Action</b></h3>-->
+<!--        <div class="col-md-6">-->
+<!--            <h4 class="text-center" style="color: #cc0000;"><b>Before</b></h4>-->
+<!--            <p class="text-center" style="font-style: italic;">All actions are visible to the user by default.</p>-->
+<!--            <div class="oe_demo oe_picture oe_screenshot">-->
+<!--                <img src="before_action.png" alt="Before hiding actions" style="border: 1px solid #ddd; border-radius: 10px; width: 100%;">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-6">-->
+<!--            <h4 class="text-center" style="color: #28a745;"><b>After</b></h4>-->
+<!--            <p class="text-center" style="font-style: italic;">Specific actions are hidden based on your custom rules.</p>-->
+<!--            <div class="oe_demo oe_picture oe_screenshot">-->
+<!--                <img src="after_action.png" alt="After hiding actions" style="border: 1px solid #ddd; border-radius: 10px; width: 100%;">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section class="oe_container oe_dark">-->
+<!--    <div class="oe_row oe_spaced">-->
+<!--        <div class="col-md-12">-->
+<!--            <h3 class="oe_slogan" style="color:#714B67; text-align: left; margin-left: 20px;"><b>Main Features:</b></h3>-->
+<!--            <div style="margin-left: 40px;">-->
+<!--                <p class="fa fa-check-circle" style="color:#2dd280; font-size: 20px;">-->
+<!--                    <span style="color:#333; font-size: 16px; margin-left: 10px;">Hide common actions: <b>Duplicate, Archive, Unarchive, Delete, and Export</b>.</span>-->
+<!--                </p><br/>-->
+<!--                <p class="fa fa-check-circle" style="color:#2dd280; font-size: 20px;">-->
+<!--                    <span style="color:#333; font-size: 16px; margin-left: 10px;">Granular control: Configure different rules for <b>different models</b> for the same user.</span>-->
+<!--                </p><br/>-->
+<!--                <p class="fa fa-check-circle" style="color:#2dd280; font-size: 20px;">-->
+<!--                    <span style="color:#333; font-size: 16px; margin-left: 10px;"><b>User-specific:</b> Settings are applied at the user level through a dedicated tab.</span>-->
+<!--                </p><br/>-->
+<!--                <p class="fa fa-check-circle" style="color:#2dd280; font-size: 20px;">-->
+<!--                    <span style="color:#333; font-size: 16px; margin-left: 10px;">Native Feel: Built using <b>OWL (Odoo Web Library)</b> for the backend.</span>-->
+<!--                </p><br/>-->
+<!--                <p class="fa fa-check-circle" style="color:#2dd280; font-size: 20px;">-->
+<!--                    <span style="color:#333; font-size: 16px; margin-left: 10px;">Safe: Does not affect backend business logic or access rights (CRUD).</span>-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section class="oe_container">-->
+<!--    <div class="oe_row oe_spaced">-->
+<!--        <div class="col-md-12">-->
+<!--            <h3 class="oe_slogan" style="color:#714B67;"><b>How to Configure</b></h3>-->
+<!--            <p class="oe_slogan" style="font-size: 16px;">Easy setup in just 3 steps:</p>-->
+<!--        </div>-->
+<!--        <div class="col-md-4 text-center">-->
+<!--            <span class="fa fa-user" style="font-size: 45px; color:#714B67;"></span>-->
+<!--            <p>1. Go to <b>Settings > Users</b> and select a user.</p>-->
+<!--        </div>-->
+<!--        <div class="col-md-4 text-center">-->
+<!--            <span class="fa fa-list-alt" style="font-size: 45px; color:#714B67;"></span>-->
+<!--            <p>2. Open <b>'Hidden Actions'</b> tab.</p>-->
+<!--        </div>-->
+<!--        <div class="col-md-4 text-center">-->
+<!--            <span class="fa fa-cogs" style="font-size: 45px; color:#714B67;"></span>-->
+<!--            <p>3. Add a rule, select <b>Models</b> and <b>Actions</b> to hide.</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section class="oe_container oe_dark">-->
+<!--    <div class="oe_row oe_spaced">-->
+<!--        <div class="oe_span12">-->
+<!--            <h3 class="oe_slogan" style="color:#332c3c; font-size: 28px;">Seamless Integration</h3>-->
+<!--            <p class="text-center">The module patches the backend Action Menu to filter items dynamically based on the configuration.</p>-->
+<!--            <div class="oe_demo oe_picture oe_screenshot">-->
+<!--                <img src="screenshot_config.png" alt="Configuration Tab Screenshot" style="border: 1px solid #ddd; border-radius: 10px; width: 100%;">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<hr style="width: 100%; height: 2px; background: #714B67; margin: 20px 0px;">-->
+<!--<section class="oe_container">-->
+<!--    <div class="oe_row">-->
+<!--        <div class="oe_slogan text-center">-->
+<!--            <h3 style="color:#714B67; font-size: 25px;">Need Support or Customization?</h3>-->
+<!--            <p style="font-size: 18px;">Created by: <b>Ahmed_A & Yousef_H</b></p>-->
+<!--            <div style="margin-top: 20px;">-->
+<!--                <a href="mailto:your-email@example.com" class="btn btn-primary" style="background-color: #714B67; border-color: #714B67; padding: 10px 25px; font-weight: bold;">-->
+<!--                    <i class="fa fa-envelope"></i> Contact Us via Email-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; &ndash;&gt;-->
+<!--<section class="oe_container oe_dark">-->
+<!--    <div class="col-md-12">-->
+<!--        <h2 class="oe_slogan" style="font-size: 35px; color:#714B67;">-->
+<!--            <b>User Action Visibility Control</b>-->
+<!--        </h2>-->
+<!--        <h3 class="oe_slogan" style="opacity: 0.7;">-->
+<!--            Take full control over Action Menu visibility per User and per Model-->
+<!--        </h3>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section class="oe_container">-->
+<!--    <div class="col-md-12">-->
+<!--        <p class="oe_slogan" style="font-size: 18px; color:#333; line-height: 1.6;">-->
+<!--            Restrict specific UI actions like <b>Duplicate, Export, or Delete</b>-->
+<!--            for selected users without touching access rights or business logic.-->
+<!--            This module provides a clean and dynamic solution to control Action Menu-->
+<!--            visibility per <b>User</b> and per <b>Model</b>.-->
+<!--        </p>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; BEFORE / AFTER ACTION MENU &ndash;&gt;-->
+<!--<section class="oe_container">-->
+<!--    <div class="oe_row oe_spaced">-->
+<!--        <h3 class="oe_slogan" style="color:#714B67;">-->
+<!--            <b>Before & After – Action Menu</b>-->
+<!--        </h3>-->
+
+<!--        <div class="col-md-6">-->
+<!--            <h4 class="text-center" style="color:#cc0000;"><b>Before</b></h4>-->
+<!--            <p class="text-center" style="font-style: italic;">-->
+<!--                All actions are visible by default.-->
+<!--            </p>-->
+<!--            <div class="oe_demo oe_picture oe_screenshot">-->
+<!--                <img src="before_1.png"-->
+<!--                     alt="Actions menu before hiding"-->
+<!--                     style="border:1px solid #ddd; border-radius:10px; width:100%;">-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="col-md-6">-->
+<!--            <h4 class="text-center" style="color:#28a745;"><b>After</b></h4>-->
+<!--            <p class="text-center" style="font-style: italic;">-->
+<!--                Restricted actions are hidden based on user configuration.-->
+<!--            </p>-->
+<!--            <div class="oe_demo oe_picture oe_screenshot">-->
+<!--                <img src="after_1.1.png"-->
+<!--                     alt="Actions menu after hiding"-->
+<!--                     style="border:1px solid #ddd; border-radius:10px; width:100%;">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; CONFIGURATION &ndash;&gt;-->
+<!--<section class="oe_container oe_dark">-->
+<!--    <div class="oe_row oe_spaced">-->
+<!--        <div class="col-md-12">-->
+<!--            <h3 class="oe_slogan" style="color:#714B67;">-->
+<!--                <b>User Configuration – Hidden Actions</b>-->
+<!--            </h3>-->
+<!--            <p class="text-center">-->
+<!--                Configure hidden actions directly from the user form with-->
+<!--                model-specific rules.-->
+<!--            </p>-->
+<!--            <div class="oe_demo oe_picture oe_screenshot">-->
+<!--                <img src="after_config.png"-->
+<!--                     alt="Hidden Actions configuration"-->
+<!--                     style="border:1px solid #ddd; border-radius:10px; width:100%;">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; FEATURES &ndash;&gt;-->
+<!--<section class="oe_container">-->
+<!--    <div class="oe_row oe_spaced">-->
+<!--        <div class="col-md-12">-->
+<!--            <h3 class="oe_slogan" style="color:#714B67;">-->
+<!--                <b>Main Features</b>-->
+<!--            </h3>-->
+
+<!--            <ul style="font-size:16px; line-height:1.8;">-->
+<!--                <li>Hide actions like <b>Duplicate, Export, Delete, Archive</b>.</li>-->
+<!--                <li>Per-user and per-model configuration.</li>-->
+<!--                <li>Native OWL-based patching of the Action Menu.</li>-->
+<!--                <li>No impact on access rights or backend logic.</li>-->
+<!--                <li>Clean UI integration with standard Odoo look & feel.</li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; HOW TO USE &ndash;&gt;-->
+<!--<section class="oe_container oe_dark">-->
+<!--    <div class="oe_row oe_spaced">-->
+<!--        <div class="col-md-12">-->
+<!--            <h3 class="oe_slogan" style="color:#714B67;">-->
+<!--                <b>How to Configure</b>-->
+<!--            </h3>-->
+<!--        </div>-->
+
+<!--        <div class="col-md-4 text-center">-->
+<!--            <span class="fa fa-user" style="font-size:40px; color:#714B67;"></span>-->
+<!--            <p><b>1.</b> Go to <b>Settings → Users</b></p>-->
+<!--        </div>-->
+
+<!--        <div class="col-md-4 text-center">-->
+<!--            <span class="fa fa-list-alt" style="font-size:40px; color:#714B67;"></span>-->
+<!--            <p><b>2.</b> Open the <b>Hidden Actions</b> tab</p>-->
+<!--        </div>-->
+
+<!--        <div class="col-md-4 text-center">-->
+<!--            <span class="fa fa-cogs" style="font-size:40px; color:#714B67;"></span>-->
+<!--            <p><b>3.</b> Select Models & Actions to hide</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<hr style="width:100%; height:2px; background:#714B67; margin:20px 0;">-->
+
+<!--<section class="oe_container">-->
+<!--    <div class="oe_row">-->
+<!--        <div class="oe_slogan text-center">-->
+<!--            <h3 style="color:#714B67;">Need Support or Customization?</h3>-->
+<!--            <p>Created by <b>Ahmed_A & Yousef_H</b></p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!-----********************-->
+
+<!-- --------------------- -->
+<section class="oe_container oe_dark">
+    <div class="col-md-12">
+        <h2 class="oe_slogan" style="font-size: 35px; color:#714B67;">
+            <b>User Action Visibility Control</b>
+        </h2>
+        <h3 class="oe_slogan" style="opacity: 0.7;">
+            Take full control over Action Menu visibility per User and per Model
+        </h3>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="col-md-12">
+        <p class="oe_slogan" style="font-size: 18px; color:#333; line-height: 1.6;">
+            Restrict specific UI actions like <b>Duplicate, Export, or Delete</b>
+            for selected users without touching access rights or business logic.
+            This module provides a clean and dynamic solution to control Action Menu
+            visibility per <b>User</b> and per <b>Model</b>.
+        </p>
+    </div>
+</section>
+
+<!-- BEFORE / AFTER ACTION MENU (BIGGER IMAGES) -->
+<!-- BEFORE / AFTER ACTION MENU (SEPARATED BOXES) -->
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan" style="color:#714B67;">
+            <b>Before & After – Action Menu</b>
+        </h3>
+    </div>
+</section>
+
+<!-- BEFORE BOX -->
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="col-md-12">
+
+            <div style="
+                background:#ffffff;
+                border-radius:12px;
+                padding:25px;
+                box-shadow:0 6px 18px rgba(0,0,0,0.08);
+                margin-bottom:70px;
+            ">
+                <h4 class="text-center" style="color:#cc0000; margin-bottom:8px;">
+                    <b>Before</b>
+                </h4>
+                <p class="text-center" style="font-style: italic; margin-bottom:20px;">
+                    All actions are visible by default.
+                </p>
+
+                <img src="before_1.png"
+                     alt="Actions menu before hiding"
+                     style="
+                        display:block;
+                        margin:0 auto;
+                        width:100%;
+                        max-width:1400px;
+                        height:auto;
+                        border-radius:8px;
+                        border:1px solid #e0e0e0;
+                     ">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- AFTER BOX -->
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="col-md-12">
+
+            <div style="
+                background:#ffffff;
+                border-radius:12px;
+                padding:25px;
+                box-shadow:0 6px 18px rgba(0,0,0,0.08);
+            ">
+                <h4 class="text-center" style="color:#28a745; margin-bottom:8px;">
+                    <b>After</b>
+                </h4>
+                <p class="text-center" style="font-style: italic; margin-bottom:20px;">
+                    Restricted actions are hidden based on user configuration.
+                </p>
+                <img src="after_1.1.png"
+                     alt="Actions menu after hiding"
+                     style="
+                        display:block;
+                        margin:0 auto;
+                        width:100%;
+                        max-width:1400px;
+                        height:auto;
+                        border-radius:8px;
+                        border:1px solid #e0e0e0;
+                     ">
+                <br/>
+                 <img src="after_1.2.png"
+                     alt="Actions menu after hiding"
+                     style="
+                        display:block;
+                        margin:0 auto;
+                        width:100%;
+                        max-width:1400px;
+                        height:auto;
+                        border-radius:8px;
+                        border:1px solid #e0e0e0;
+                     ">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- BEFORE BOX 2 -->
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="col-md-12">
+
+            <div style="
+                background:#ffffff;
+                border-radius:12px;
+                padding:25px;
+                box-shadow:0 6px 18px rgba(0,0,0,0.08);
+                margin-bottom:70px;
+            ">
+                <h4 class="text-center" style="color:#cc0000; margin-bottom:8px;">
+                    <b>Before</b>
+                </h4>
+                <p class="text-center" style="font-style: italic; margin-bottom:20px;">
+                    All actions are visible by default.
+                </p>
+
+                <img src="before_2.png"
+                     alt="Actions menu before hiding"
+                     style="
+                        display:block;
+                        margin:0 auto;
+                        width:100%;
+                        max-width:1400px;
+                        height:auto;
+                        border-radius:8px;
+                        border:1px solid #e0e0e0;
+                     ">
+                <br/>
+                   <img src="before_2.2.png"
+                     alt="Actions menu before hiding"
+                     style="
+                        display:block;
+                        margin:0 auto;
+                        width:100%;
+                        max-width:1400px;
+                        height:auto;
+                        border-radius:8px;
+                        border:1px solid #e0e0e0;
+                     ">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- AFTER BOX 2 -->
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="col-md-12">
+
+            <div style="
+                background:#ffffff;
+                border-radius:12px;
+                padding:25px;
+                box-shadow:0 6px 18px rgba(0,0,0,0.08);
+            ">
+                <h4 class="text-center" style="color:#28a745; margin-bottom:8px;">
+                    <b>After</b>
+                </h4>
+                <p class="text-center" style="font-style: italic; margin-bottom:20px;">
+                    Restricted actions are hidden based on user configuration.
+                </p>
+                <img src="after_2.1.png"
+                     alt="Actions menu after hiding"
+                     style="
+                        display:block;
+                        margin:0 auto;
+                        width:100%;
+                        max-width:1400px;
+                        height:auto;
+                        border-radius:8px;
+                        border:1px solid #e0e0e0;
+                     ">
+                <br/>
+                 <img src="after_2.2.png"
+                     alt="Actions menu after hiding"
+                     style="
+                        display:block;
+                        margin:0 auto;
+                        width:100%;
+                        max-width:1400px;
+                        height:auto;
+                        border-radius:8px;
+                        border:1px solid #e0e0e0;
+                     ">
+                <br/>
+
+                <img src="after_2.3.png"
+                     alt="Actions menu after hiding"
+                     style="
+                        display:block;
+                        margin:0 auto;
+                        width:100%;
+                        max-width:1400px;
+                        height:auto;
+                        border-radius:8px;
+                        border:1px solid #e0e0e0;
+                     ">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--&lt;!&ndash; CONFIGURATION &ndash;&gt;-->
+<!--<section class="oe_container oe_dark">-->
+<!--    <div class="oe_row oe_spaced">-->
+<!--        <div class="col-md-12">-->
+<!--            <h3 class="oe_slogan" style="color:#714B67;">-->
+<!--                <b>User Configuration – Hidden Actions</b>-->
+<!--            </h3>-->
+<!--            <p class="text-center">-->
+<!--                Configure hidden actions directly from the user form with-->
+<!--                model-specific rules.-->
+<!--            </p>-->
+<!--            <div class="oe_demo oe_picture oe_screenshot">-->
+<!--                <img src="after_config.png"-->
+<!--                     alt="Hidden Actions configuration"-->
+<!--                     style="border:1px solid #ddd; border-radius:10px; width:100%; height:auto;">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; FEATURES &ndash;&gt;-->
+<!--<section class="oe_container">-->
+<!--    <div class="oe_row oe_spaced">-->
+<!--        <div class="col-md-12">-->
+<!--            <h3 class="oe_slogan" style="color:#714B67;">-->
+<!--                <b>Main Features</b>-->
+<!--            </h3>-->
+
+<!--            <ul style="font-size:16px; line-height:1.8;">-->
+<!--                <li>Hide actions like <b>Duplicate, Export, Delete, Archive</b>.</li>-->
+<!--                <li>Per-user and per-model configuration.</li>-->
+<!--                <li>Native OWL-based patching of the Action Menu.</li>-->
+<!--                <li>No impact on access rights or backend logic.</li>-->
+<!--                <li>Clean UI integration with standard Odoo look & feel.</li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; HOW TO USE &ndash;&gt;-->
+<!--<section class="oe_container oe_dark">-->
+<!--    <div class="oe_row oe_spaced">-->
+<!--        <div class="col-md-12">-->
+<!--            <h3 class="oe_slogan" style="color:#714B67;">-->
+<!--                <b>How to Configure</b>-->
+<!--            </h3>-->
+<!--        </div>-->
+
+<!--        <div class="col-md-4 text-center">-->
+<!--            <span class="fa fa-user" style="font-size:40px; color:#714B67;"></span>-->
+<!--            <p><b>1.</b> Go to <b>Settings → Users</b></p>-->
+<!--        </div>-->
+
+<!--        <div class="col-md-4 text-center">-->
+<!--            <span class="fa fa-list-alt" style="font-size:40px; color:#714B67;"></span>-->
+<!--            <p><b>2.</b> Open the <b>Hidden Actions</b> tab</p>-->
+<!--        </div>-->
+
+<!--        <div class="col-md-4 text-center">-->
+<!--            <span class="fa fa-cogs" style="font-size:40px; color:#714B67;"></span>-->
+<!--            <p><b>3.</b> Select Models & Actions to hide</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<hr style="width:100%; height:2px; background:#714B67; margin:20px 0;">-->
+
+<!--<section class="oe_container">-->
+<!--    <div class="oe_row">-->
+<!--        <div class="oe_slogan text-center">-->
+<!--            <h3 style="color:#714B67;">Need Support or Customization?</h3>-->
+<!--            <p>Created by <b>Ahmed_A & Yousef_H</b></p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="col-md-12">
+            <h3 class="oe_slogan" style="color:#714B67; text-align: left; margin-left: 20px;"><b>Main Features:</b></h3>
+            <div style="margin-left: 40px;">
+                <p class="fa fa-check-circle" style="color:#2dd280; font-size: 20px;">
+                    <span style="color:#333; font-size: 16px; margin-left: 10px;">Hide common actions: <b>Duplicate, Archive, Unarchive, Delete, and Export</b>.</span>
+                </p><br/>
+                <p class="fa fa-check-circle" style="color:#2dd280; font-size: 20px;">
+                    <span style="color:#333; font-size: 16px; margin-left: 10px;">Granular control: Configure different rules for <b>different models</b> for the same user.</span>
+                </p><br/>
+                <p class="fa fa-check-circle" style="color:#2dd280; font-size: 20px;">
+                    <span style="color:#333; font-size: 16px; margin-left: 10px;"><b>User-specific:</b> Settings are applied at the user level through a dedicated tab.</span>
+                </p><br/>
+                <p class="fa fa-check-circle" style="color:#2dd280; font-size: 20px;">
+                    <span style="color:#333; font-size: 16px; margin-left: 10px;">Native Feel: Built using <b>OWL (Odoo Web Library)</b> for the backend.</span>
+                </p><br/>
+                <p class="fa fa-check-circle" style="color:#2dd280; font-size: 20px;">
+                    <span style="color:#333; font-size: 16px; margin-left: 10px;">Safe: Does not affect backend business logic or access rights (CRUD).</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="col-md-12">
+            <h3 class="oe_slogan" style="color:#714B67;"><b>How to Configure</b></h3>
+            <p class="oe_slogan" style="font-size: 16px;">Easy setup in just 3 steps:</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <span class="fa fa-user" style="font-size: 45px; color:#714B67;"></span>
+            <p>1. Go to <b>Settings > Users</b> and select a user.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <span class="fa fa-list-alt" style="font-size: 45px; color:#714B67;"></span>
+            <p>2. Open <b>'Hidden Actions'</b> tab.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <span class="fa fa-cogs" style="font-size: 45px; color:#714B67;"></span>
+            <p>3. Add a rule, select <b>Models</b> and <b>Actions</b> to hide.</p>
+        </div>
+    </div>
+</section>
+
+<!--<section class="oe_container oe_dark">-->
+<!--    <div class="oe_row oe_spaced">-->
+<!--        <div class="oe_span12">-->
+<!--            <h3 class="oe_slogan" style="color:#332c3c; font-size: 28px;">Seamless Integration</h3>-->
+<!--            <p class="text-center">The module patches the backend Action Menu to filter items dynamically based on the configuration.</p>-->
+<!--            <div class="oe_demo oe_picture oe_screenshot">-->
+<!--                <img src="screenshot_config.png" alt="Configuration Tab Screenshot" style="border: 1px solid #ddd; border-radius: 10px; width: 100%;">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<hr style="width: 100%; height: 2px; background: #714B67; margin: 20px 0px;">
+<section class="oe_container">
+    <div class="oe_row">
+        <div class="oe_slogan text-center">
+            <h3 style="color:#714B67; font-size: 25px;">Need Support or Customization?</h3>
+            <p style="font-size: 18px;">Created by: <b>Ahmed_A & Yousef_H</b></p>
+            <div style="margin-top: 20px;">
+                <a href="mailto:your-email@example.com" class="btn btn-primary" style="background-color: #714B67; border-color: #714B67; padding: 10px 25px; font-weight: bold;">
+                    <i class="fa fa-envelope"></i> Contact Us via Email
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
